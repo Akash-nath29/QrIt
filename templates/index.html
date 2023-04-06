@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8' content='width:device-width, initial-scale:1.0'/>
+        <title>QrIt—QRCode maker</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    </head>
+    <body>
+        <div class="container">
+            <div class="inputs">
+                <form action="/makeQR" method="POST" accept-charset="utf-8">
+                <input type="text" name="data" id="data" placeholder ="Enter Data to convert" />
+                <input type="submit" name="submit" id="submit" value="Submit" />
+                </form>
+            </div>
+            <div class="output">
+                <img src="  {{url_for('static', filename='somename.png')}}  " alt="qrcode" />
+            </div>
+        </div>
+    </body>
+</html>
