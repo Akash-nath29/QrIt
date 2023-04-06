@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inputs input {
+    font-size: 35px;
+    font-family: 'Ubuntu', Sans-Serif;
+    margin:25px;
+    padding:10px 15px;
+}
+#submit {
+    background-color: #008dc3;
+    color: #ffffff;
+    border: 1px solid #a8a8a8;
+    border-radius: 10px;
+}
